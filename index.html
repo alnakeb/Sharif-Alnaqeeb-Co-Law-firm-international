@@ -1,109 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sharif Alnaqeeb & Co Law Firm International</title>
+    <title>Sharif Alnaqeeb & Co Law Firm - Map Citations</title>
+    <meta name="description" content="International EPC and FIDIC contracts law firm locations worldwide">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background: #f8f9fa;
-            color: #2d3748;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        .header {
-            text-align: center;
-            border-bottom: 3px solid #d4af37;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        .firm-name {
-            font-size: 2.2em;
-            font-weight: 300;
-            color: #2c5aa0;
-            margin: 10px 0;
-        }
-        .specialization {
-            color: #666;
-            font-size: 1.1em;
-            margin: 10px 0;
-        }
-        .download-section {
-            text-align: center;
-            margin: 30px 0;
-        }
-        .download-btn {
-            display: inline-block;
-            background: #2c5aa0;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.1em;
-            font-weight: bold;
-        }
-        .instructions {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 5px;
-            margin: 20px 0;
-        }
-        .contact {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-        }
-        .phone-number {
-            font-weight: bold;
-            color: #2c5aa0;
-        }
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .kml-link { display: block; margin: 10px 0; padding: 10px; background: #f5f5f5; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div style="font-size: 1.5em; font-weight: bold; color: #2c5aa0; margin-bottom: 10px;">
-                FIDIC
-            </div>
-            <h1 class="firm-name">SHARIF ALNAQEEB & CO</h1>
-            <div class="specialization">LAW FIRM INTERNATIONAL</div>
-            <div style="color: #2c5aa0; font-weight: bold; margin-top: 10px;">
-                EPC • FIDIC • INTERNATIONAL ARBITRATION
-            </div>
-        </div>
-
-        <div class="download-section">
-            <a href="alnaqeeb-global-citations.kmz" class="download-btn" download>
-                Download KMZ File
-            </a>
-        </div>
-
-        <div class="instructions">
-            <h3>How to Use:</h3>
-            <ol>
-                <li>Download the KMZ file</li>
-                <li>Go to <a href="https://www.google.com/maps/d/">Google My Maps</a></li>
-                <li>Create a new map and import the file</li>
-            </ol>
-        </div>
-
-        <div class="contact">
-            <p><strong>Email:</strong> contact@alnaqeeblaw.com</p>
-            <p><strong>Website:</strong> alnaqeeblaw.com</p>
-            <p><strong>Phone:</strong> 
-                <span class="phone-number">Egypt: 00201094951000</span> | 
-                <span class="phone-number">Saudi Arabia: 00966509585085</span>
-            </p>
-        </div>
-    </div>
+    <h1>Sharif Alnaqeeb & Co Law Firm Map Citations</h1>
+    
+    <h2>Download KML Files:</h2>
+    <a class="kml-link" href="kml/middle-east-citations.kml">Middle East Region Citations</a>
+    <a class="kml-link" href="kml/uk-qatar-citations.kml">UK & Qatar Citations</a>
+    <a class="kml-link" href="kml/global-expansion.kml">Global Expansion Citations</a>
+    
+    <h2>View in Google Maps:</h2>
+    <p>Copy the raw KML URL and paste into Google Maps:</p>
+    <code id="kml-url">https://raw.githubusercontent.com/yourusername/alnaqeeb-law-firm-maps/main/kml/middle-east-citations.kml</code>
+    <button onclick="copyUrl()">Copy URL</button>
+    
+    <script>
+        function copyUrl() {
+            navigator.clipboard.writeText(document.getElementById('kml-url').textContent);
+            alert('KML URL copied to clipboard!');
+        }
+    </script>
 </body>
 </html>
