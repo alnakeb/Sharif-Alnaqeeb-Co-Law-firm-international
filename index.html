@@ -4,28 +4,108 @@
     <title>Sharif Alnaqeeb & Co Law Firm - Map Citations</title>
     <meta name="description" content="International EPC and FIDIC contracts law firm locations worldwide">
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        .kml-link { display: block; margin: 10px 0; padding: 10px; background: #f5f5f5; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 40px;
+            background: #0A1931; /* Dark blue background */
+            color: #D4AF37; /* Gold text color */
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #FFFFFF; /* White headings */
+            border-bottom: 2px solid #D4AF37; /* Gold underline */
+            padding-bottom: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .kml-link { 
+            display: block; 
+            margin: 15px 0; 
+            padding: 15px; 
+            background: #1E3A5F; /* Medium blue background */
+            color: #D4AF37; /* Gold text */
+            text-decoration: none;
+            border: 1px solid #D4AF37;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        .kml-link:hover {
+            background: #D4AF37; /* Gold background on hover */
+            color: #0A1931; /* Dark blue text on hover */
+            transform: translateY(-2px);
+        }
+        p {
+            color: #FFFFFF; /* White text */
+            line-height: 1.6;
+        }
+        code {
+            background: #1E3A5F;
+            color: #FFFFFF;
+            padding: 12px;
+            border-radius: 5px;
+            display: block;
+            margin: 15px 0;
+            border: 1px solid #D4AF37;
+            word-break: break-all;
+            font-family: 'Courier New', monospace;
+        }
+        button {
+            background: #D4AF37; /* Gold button */
+            color: #0A1931; /* Dark blue text */
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1em;
+        }
+        button:hover {
+            background: #B8941F; /* Darker gold on hover */
+            transform: translateY(-2px);
+        }
+        .section {
+            background: rgba(30, 58, 95, 0.5); /* Semi-transparent blue */
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border: 1px solid #D4AF37;
+        }
     </style>
 </head>
 <body>
-    <h1>Sharif Alnaqeeb & Co Law Firm Map Citations</h1>
-    
-    <h2>Download KML Files:</h2>
-    <a class="kml-link" href="kml/middle-east-citations.kml">Middle East Region Citations</a>
-    <a class="kml-link" href="kml/uk-qatar-citations.kml">UK & Qatar Citations</a>
-    <a class="kml-link" href="kml/global-expansion.kml">Global Expansion Citations</a>
-    
-    <h2>View in Google Maps:</h2>
-    <p>Copy the raw KML URL and paste into Google Maps:</p>
-    <code id="kml-url">https://raw.githubusercontent.com/yourusername/alnaqeeb-law-firm-maps/main/kml/middle-east-citations.kml</code>
-    <button onclick="copyUrl()">Copy URL</button>
-    
-    <script>
-        function copyUrl() {
-            navigator.clipboard.writeText(document.getElementById('kml-url').textContent);
-            alert('KML URL copied to clipboard!');
-        }
-    </script>
+    <div class="container">
+        <h1>Sharif Alnaqeeb & Co Law Firm Map Citations</h1>
+        
+        <div class="section">
+            <h2>Download KML Files:</h2>
+            <a class="kml-link" href="kml/middle-east-citations.kml">Middle East Region Citations</a>
+            <a class="kml-link" href="kml/uk-qatar-citations.kml">UK & Qatar Citations</a>
+            <a class="kml-link" href="kml/global-expansion.kml">Global Expansion Citations</a>
+        </div>
+        
+        <div class="section">
+            <h2>View in Google Maps:</h2>
+            <p>Copy the raw KML URL and paste into Google Maps:</p>
+            <code id="kml-url">https://raw.githubusercontent.com/yourusername/alnaqeeb-law-firm-maps/main/kml/middle-east-citations.kml</code>
+            <button onclick="copyUrl()">Copy URL</button>
+        </div>
+        
+        <script>
+            function copyUrl() {
+                navigator.clipboard.writeText(document.getElementById('kml-url').textContent);
+                alert('KML URL copied to clipboard!');
+            }
+        </script>
+    </div>
 </body>
 </html>
